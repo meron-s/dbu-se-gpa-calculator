@@ -1,0 +1,58 @@
+{
+  "year2Semester1": [
+    { "code": "CV201", "name": "Inclusiveness", "credit": 3 },
+    { "code": "CV202", "name": "Global Trends", "credit": 3 },
+    { "code": "SE211", "name": "Discrete Mathematics and Combinatory", "credit": 5 },
+    { "code": "Econ201", "name": "Introduction to Economics", "credit": 5 },
+    { "code": "SE221", "name": "Fundamentals of Database Systems", "credit": 5 },
+    { "code": "SE201", "name": "Fundamental of Software Engineering", "credit": 5 },
+    { "code": "SE203", "name": "Principles of Programming", "credit": 5 }
+  ],
+  "year2Semester2": [
+    { "code": "SE222", "name": "Advanced Database Systems", "credit": 5 },
+    { "code": "SE232", "name": "Computer Organization & Assembly Language Programming", "credit": 5 },
+    { "code": "SE212", "name": "Design and Analysis of Data Structures and Algorithms", "credit": 5 },
+    { "code": "SE204", "name": "Object Oriented Programming", "credit": 5 },
+    { "code": "SE242", "name": "Object Oriented System Analysis and Design", "credit": 5 },
+    { "code": "Stat202", "name": "Probability and Statistics", "credit": 5 }
+  ],
+  "year3Semester1": [
+    { "code": "SE341", "name": "Requirement Engineering", "credit": 5 },
+    { "code": "SE301", "name": "Software Engineering Tools and Practices", "credit": 5 },
+    { "code": "SE331", "name": "Operating Systems and Systems Programming", "credit": 5 },
+    { "code": "SE303", "name": "Advanced Programming", "credit": 5 },
+    { "code": "SE351", "name": "Fundamentals of Networking", "credit": 5 },
+    { "code": "SE325", "name": "Web Design and Programming I", "credit": 5 }
+  ],
+  "year3Semester2": [
+    { "code": "SE332", "name": "Principles of Distributed Systems", "credit": 5 },
+    { "code": "SE362", "name": "Fundamentals of Artificial Intelligence", "credit": 5 },
+    { "code": "SE344", "name": "Software Project Management", "credit": 5 },
+    { "code": "SE312", "name": "Principles of Compiler Design", "credit": 5 },
+    { "code": "SE326", "name": "Web Design and Programming II", "credit": 5 },
+    { "code": "SE342", "name": "Software Architecture and Design", "credit": 5 }
+  ],
+  "year4Semester1": [
+    { "code": "SE401", "name": "Event Driven Programming", "credit": 5 },
+    { "code": "SE461", "name": "Fundamentals of Machine Learning", "credit": 5 },
+    { "code": "SE451", "name": "Fundamentals of Software Security", "credit": 5 },
+    { "code": "SE403", "name": "Mobile Application Development", "credit": 5 },
+    { "code": "SE441", "name": "Software Component Design and Patterns", "credit": 5 },
+    { "code": "SE443", "name": "Software Testing and Quality Assurance", "credit": 5 }
+  ],
+  "year4Semester2": [
+    { "code": "SE492", "name": "Industrial Internship / Practical Attachment", "credit": 5 }
+  ],
+  "year5Semester1": [
+    { "code": "SE541", "name": "Software Evolution and Maintenance", "credit": 5 },
+    { "code": "SE543", "name": "Software Metrics", "credit": 5 },
+    { "code": "SE545", "name": "Software Component Design", "credit": 5 },
+    { "code": "SE561", "name": "Fundamentals of Big Data Analytics and Business Intelligence", "credit": 5 }
+  ],
+  "year5Semester2": [
+    { "code": "SE582", "name": "Computer Graphics and Multimedia", "credit": 5 },
+    { "code": "SE584", "name": "Human Computer Interaction", "credit": 5 },
+    { "code": "SE592", "name": "Selected Topics in Software Engineering", "credit": 5 },
+    { "code": "SE522", "name": "Web Service", "credit": 5 }
+  ]
+}

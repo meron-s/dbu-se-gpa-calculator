@@ -1,0 +1,6 @@
+{
+  "name": "DBU SE GPA Calculator",
+  "description": "GPA and CGPA calculator and academic progress tracker for the Software Engineering Department at Debre Berhan University.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
