@@ -60,7 +60,7 @@ export default function Prediction() {
   return (
     <div className="space-y-6 animate-in fade-in slide-in-from-bottom-3 duration-250">
       {/* Intro Hero */}
-      <div className="rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 shadow-sm">
+      <div className="rounded-2xl border border-slate-100 dark:border-slate-900 bg-white dark:bg-slate-950 p-6 shadow-sm">
         <div className="flex items-center gap-2 mb-2 text-blue-600 dark:text-blue-400">
           <Sparkles className="h-5 w-5 fill-current animate-pulse" />
           <h2 className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wider">
@@ -74,8 +74,8 @@ export default function Prediction() {
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
         {/* Core Prediction Math */}
-        <div className="rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 shadow-sm space-y-6">
-          <div className="border-b border-slate-100 dark:border-slate-800 pb-3">
+        <div className="rounded-2xl border border-slate-100 dark:border-slate-900 bg-white dark:bg-slate-950 p-6 shadow-sm space-y-6">
+          <div className="border-b border-slate-100 dark:border-slate-900 pb-3">
             <h3 className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wider">
               Target CGPA Predictor
             </h3>
@@ -107,7 +107,7 @@ export default function Prediction() {
             </div>
 
             {/* Simulated Inputs toggles */}
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 bg-slate-50/50 dark:bg-slate-950/20 rounded-xl p-4 border border-slate-100 dark:border-slate-850">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 bg-slate-50/50 dark:bg-black/20 rounded-xl p-4 border border-slate-100 dark:border-slate-900">
               <div>
                 <label className="block text-[10px] font-black uppercase tracking-wider text-slate-400 mb-1">
                   Current CGPA
@@ -119,7 +119,7 @@ export default function Prediction() {
                   step="0.01"
                   value={customCurrentCGPA}
                   onChange={(e) => setCustomCurrentCGPA(Number(e.target.value))}
-                  className="w-full rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-2.5 py-1.5 text-xs font-bold text-slate-800 dark:text-white"
+                  className="w-full rounded-lg border border-slate-200 dark:border-slate-900 bg-white dark:bg-slate-950 px-2.5 py-1.5 text-xs font-bold text-slate-800 dark:text-white"
                 />
               </div>
 
@@ -133,7 +133,7 @@ export default function Prediction() {
                   max="121"
                   value={customCurrentCredits}
                   onChange={(e) => setCustomCurrentCredits(Number(e.target.value))}
-                  className="w-full rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-2.5 py-1.5 text-xs font-bold text-slate-800 dark:text-white"
+                  className="w-full rounded-lg border border-slate-200 dark:border-slate-900 bg-white dark:bg-slate-950 px-2.5 py-1.5 text-xs font-bold text-slate-800 dark:text-white"
                 />
               </div>
 
@@ -147,7 +147,7 @@ export default function Prediction() {
                   max="121"
                   value={customRemainingCredits}
                   onChange={(e) => setCustomRemainingCredits(Number(e.target.value))}
-                  className="w-full rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-2.5 py-1.5 text-xs font-bold text-slate-800 dark:text-white"
+                  className="w-full rounded-lg border border-slate-200 dark:border-slate-900 bg-white dark:bg-slate-950 px-2.5 py-1.5 text-xs font-bold text-slate-800 dark:text-white"
                 />
               </div>
             </div>
@@ -190,8 +190,8 @@ export default function Prediction() {
         </div>
 
         {/* Sliding Future Semesters Simulator */}
-        <div className="rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 shadow-sm space-y-6">
-          <div className="border-b border-slate-100 dark:border-slate-800 pb-3">
+        <div className="rounded-2xl border border-slate-100 dark:border-slate-900 bg-white dark:bg-slate-950 p-6 shadow-sm space-y-6">
+          <div className="border-b border-slate-100 dark:border-slate-900 pb-3">
             <h3 className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wider">
               Interactive Future Simulator
             </h3>

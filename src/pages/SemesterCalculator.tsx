@@ -126,7 +126,7 @@ export default function SemesterCalculator() {
       )}
 
       {/* Year & Semester Picker */}
-      <div className="rounded-2xl border border-slate-100 dark:border-slate-800/80 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <div className="rounded-2xl border border-slate-100 dark:border-slate-900/80 bg-white dark:bg-slate-950 p-5 shadow-sm">
         <h3 className="text-xs font-black uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-3">
           Select Academic Semester
         </h3>
@@ -140,7 +140,7 @@ export default function SemesterCalculator() {
                 className={`flex flex-col items-center justify-center rounded-xl p-3 border transition-all cursor-pointer text-center ${
                   isSelected
                     ? 'bg-blue-600 border-blue-600 text-white shadow-md'
-                    : 'bg-white dark:bg-slate-900 border-slate-100 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800'
+                    : 'bg-white dark:bg-slate-950 border-slate-100 dark:border-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-900'
                 }`}
               >
                 <span className="text-xs font-black">{meta.yearName}</span>
@@ -154,8 +154,8 @@ export default function SemesterCalculator() {
       {/* Main Panel & GPA Summary Panel */}
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
         {/* Course Grades Entry Table */}
-        <div className="lg:col-span-2 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 shadow-sm">
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between mb-4 border-b border-slate-100 dark:border-slate-800 pb-4">
+        <div className="lg:col-span-2 rounded-2xl border border-slate-100 dark:border-slate-900 bg-white dark:bg-slate-950 p-5 shadow-sm">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between mb-4 border-b border-slate-100 dark:border-slate-900 pb-4">
             <div>
               <h3 className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wider">
                 {activeMeta.yearName} - {activeMeta.semesterName} Courses
@@ -174,7 +174,7 @@ export default function SemesterCalculator() {
               </button>
               <button
                 onClick={handleReset}
-                className="inline-flex h-9 items-center gap-1.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 px-3 py-1.5 text-xs font-bold hover:bg-slate-50 dark:hover:bg-slate-850 cursor-pointer shadow-xs transition-all"
+                className="inline-flex h-9 items-center gap-1.5 rounded-lg border border-slate-200 dark:border-slate-900 bg-white dark:bg-slate-950 text-slate-700 dark:text-slate-300 px-3 py-1.5 text-xs font-bold hover:bg-slate-50 dark:hover:bg-slate-950 cursor-pointer shadow-xs transition-all"
                 title="Clear Grades"
               >
                 <RotateCcw className="h-4 w-4" /> Clear
@@ -186,7 +186,7 @@ export default function SemesterCalculator() {
           <div className="overflow-x-auto">
             <table className="w-full text-left text-sm text-slate-700 dark:text-slate-300">
               <thead>
-                <tr className="border-b border-slate-100 dark:border-slate-800 text-xxs font-black uppercase tracking-wider text-slate-400 dark:text-slate-500">
+                <tr className="border-b border-slate-100 dark:border-slate-900 text-xxs font-black uppercase tracking-wider text-slate-400 dark:text-slate-500">
                   <th className="py-2.5 px-3">Code</th>
                   <th className="py-2.5 px-3">Course Name</th>
                   <th className="py-2.5 px-3 text-center">Credits</th>
@@ -199,7 +199,7 @@ export default function SemesterCalculator() {
                   courses.map((course) => (
                     <tr
                       key={course.code}
-                      className="group transition-all hover:bg-slate-50/50 dark:hover:bg-slate-800/20"
+                      className="group transition-all hover:bg-slate-50/50 dark:hover:bg-slate-900/20"
                     >
                       {/* Code */}
                       <td className="py-3 px-3 font-mono text-xs font-bold text-blue-600 dark:text-blue-400">
@@ -213,7 +213,7 @@ export default function SemesterCalculator() {
                             type="text"
                             value={editFields.name}
                             onChange={(e) => setEditFields({ ...editFields, name: e.target.value })}
-                            className="w-full rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 px-2 py-1 text-xs text-slate-900 dark:text-white"
+                            className="w-full rounded-lg border border-slate-200 dark:border-slate-900 bg-slate-50 dark:bg-slate-950 px-2 py-1 text-xs text-slate-900 dark:text-white"
                           />
                         ) : (
                           <span className="font-bold text-slate-800 dark:text-slate-200">{course.name}</span>
@@ -229,7 +229,7 @@ export default function SemesterCalculator() {
                             max="10"
                             value={editFields.credit}
                             onChange={(e) => setEditFields({ ...editFields, credit: Number(e.target.value) })}
-                            className="w-16 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 px-2 py-1 text-center text-xs text-slate-900 dark:text-white"
+                            className="w-16 rounded-lg border border-slate-200 dark:border-slate-900 bg-slate-50 dark:bg-slate-950 px-2 py-1 text-center text-xs text-slate-900 dark:text-white"
                           />
                         ) : (
                           <span>{course.credit}</span>
@@ -241,7 +241,7 @@ export default function SemesterCalculator() {
                         <select
                           value={course.grade}
                           onChange={(e) => handleGradeChange(course.code, e.target.value)}
-                          className="h-8 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-2 text-xs font-black text-slate-800 dark:text-slate-100 shadow-sm cursor-pointer focus:border-blue-500"
+                          className="h-8 rounded-lg border border-slate-200 dark:border-slate-900 bg-white dark:bg-slate-950 px-2 text-xs font-black text-slate-800 dark:text-slate-100 shadow-sm cursor-pointer focus:border-blue-500"
                         >
                           <option value="">Select Grade</option>
                           {Object.keys(GRADE_POINTS).map((g) => (

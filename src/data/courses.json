@@ -1,4 +1,21 @@
 {
+  "year1Semester1": [
+    { "code": "Math101", "name": "Mathematics", "credit": 5 },
+    { "code": "Eng101", "name": "English", "credit": 5 },
+    { "code": "Geog101", "name": "Geography", "credit": 5 },
+    { "code": "Psyc101", "name": "Psychology", "credit": 5 },
+    { "code": "Logic101", "name": "Logic", "credit": 5 },
+    { "code": "Phys101", "name": "Physics", "credit": 5 }
+  ],
+  "year1Semester2": [
+    { "code": "Eth102", "name": "Ethics", "credit": 3 },
+    { "code": "AppMath102", "name": "Applied 1", "credit": 5 },
+    { "code": "Anth102", "name": "Anthropology", "credit": 3 },
+    { "code": "CS102", "name": "C++", "credit": 5 },
+    { "code": "EmTech102", "name": "Emerging Tech", "credit": 5 },
+    { "code": "Hist102", "name": "History", "credit": 5 },
+    { "code": "Eng102", "name": "English 2", "credit": 5 }
+  ],
   "year2Semester1": [
     { "code": "CV201", "name": "Inclusiveness", "credit": 3 },
     { "code": "CV202", "name": "Global Trends", "credit": 3 },

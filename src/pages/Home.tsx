@@ -70,7 +70,7 @@ export default function Home() {
       {/* Main KPI Cards Grid */}
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {/* CGPA Card */}
-        <div className="relative overflow-hidden rounded-2xl border border-slate-100 dark:border-slate-800/80 bg-white dark:bg-slate-900 p-4 shadow-sm transition-all hover:shadow-md">
+        <div className="relative overflow-hidden rounded-2xl border border-slate-100 dark:border-slate-900/80 bg-white dark:bg-slate-950 p-4 shadow-sm transition-all hover:shadow-md">
           <div className="flex items-center justify-between">
             <span className="text-[10px] font-black uppercase tracking-wider text-slate-400 dark:text-slate-500">
               Current CGPA
@@ -93,7 +93,7 @@ export default function Home() {
         </div>
 
         {/* Credit Hours Card */}
-        <div className="relative overflow-hidden rounded-2xl border border-slate-100 dark:border-slate-800/80 bg-white dark:bg-slate-900 p-4 shadow-sm transition-all hover:shadow-md">
+        <div className="relative overflow-hidden rounded-2xl border border-slate-100 dark:border-slate-900/80 bg-white dark:bg-slate-950 p-4 shadow-sm transition-all hover:shadow-md">
           <div className="flex items-center justify-between">
             <span className="text-[10px] font-black uppercase tracking-wider text-slate-400 dark:text-slate-500">
               Total Credits
@@ -116,7 +116,7 @@ export default function Home() {
         </div>
 
         {/* Courses Completed Card */}
-        <div className="relative overflow-hidden rounded-2xl border border-slate-100 dark:border-slate-800/80 bg-white dark:bg-slate-900 p-4 shadow-sm transition-all hover:shadow-md">
+        <div className="relative overflow-hidden rounded-2xl border border-slate-100 dark:border-slate-900/80 bg-white dark:bg-slate-950 p-4 shadow-sm transition-all hover:shadow-md">
           <div className="flex items-center justify-between">
             <span className="text-[10px] font-black uppercase tracking-wider text-slate-400 dark:text-slate-500">
               Completed Courses
@@ -136,7 +136,7 @@ export default function Home() {
         </div>
 
         {/* Achievement Badges Count */}
-        <div className="relative overflow-hidden rounded-2xl border border-slate-100 dark:border-slate-800/80 bg-white dark:bg-slate-900 p-4 shadow-sm transition-all hover:shadow-md">
+        <div className="relative overflow-hidden rounded-2xl border border-slate-100 dark:border-slate-900/80 bg-white dark:bg-slate-950 p-4 shadow-sm transition-all hover:shadow-md">
           <div className="flex items-center justify-between">
             <span className="text-[10px] font-black uppercase tracking-wider text-slate-400 dark:text-slate-500">
               Graduation Class
@@ -159,7 +159,7 @@ export default function Home() {
       {/* Charts and Lists Grid */}
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
         {/* Recharts GPA Trend Card */}
-        <div className="lg:col-span-2 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 shadow-sm">
+        <div className="lg:col-span-2 rounded-2xl border border-slate-100 dark:border-slate-900 bg-white dark:bg-slate-950 p-5 shadow-sm">
           <div className="flex items-center justify-between mb-4">
             <div>
               <h3 className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wider">
@@ -217,7 +217,7 @@ export default function Home() {
         </div>
 
         {/* Recent Grades Panel */}
-        <div className="rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 shadow-sm">
+        <div className="rounded-2xl border border-slate-100 dark:border-slate-900 bg-white dark:bg-slate-950 p-5 shadow-sm">
           <div className="mb-4">
             <h3 className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wider">
               Recent Grades
@@ -232,7 +232,7 @@ export default function Home() {
               latestGrades.map((g, index) => (
                 <div
                   key={`${g.courseCode}-${index}`}
-                  className="flex items-center justify-between rounded-xl border border-slate-100/50 dark:border-slate-800/40 bg-slate-50/50 dark:bg-slate-800/10 p-3 transition-all hover:bg-slate-50 dark:hover:bg-slate-800/20"
+                  className="flex items-center justify-between rounded-xl border border-slate-100/50 dark:border-slate-900/40 bg-slate-50/50 dark:bg-slate-800/10 p-3 transition-all hover:bg-slate-50 dark:hover:bg-slate-900/20"
                 >
                   <div className="min-w-0">
                     <p className="text-[10px] font-black text-blue-600 dark:text-blue-400">
@@ -264,7 +264,7 @@ export default function Home() {
       </div>
 
       {/* Badges Accomplishments Grid */}
-      <div className="rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 shadow-sm">
+      <div className="rounded-2xl border border-slate-100 dark:border-slate-900 bg-white dark:bg-slate-950 p-6 shadow-sm">
         <div className="mb-4">
           <h3 className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wider">
             Academic Achievements
@@ -282,10 +282,10 @@ export default function Home() {
                 className={`flex items-start gap-3 rounded-xl border p-4 transition-all ${
                   badge.unlocked
                     ? `${badge.colorClass} shadow-sm`
-                    : 'bg-slate-50/50 dark:bg-slate-950/20 border-slate-100 dark:border-slate-850 opacity-40 grayscale'
+                    : 'bg-slate-50/50 dark:bg-black/20 border-slate-100 dark:border-slate-900 opacity-40 grayscale'
                 }`}
               >
-                <div className="rounded-lg p-2 bg-white dark:bg-slate-900 shadow-xs shrink-0">
+                <div className="rounded-lg p-2 bg-white dark:bg-slate-950 shadow-xs shrink-0">
                   <Star className="h-5 w-5 fill-current" />
                 </div>
                 <div>

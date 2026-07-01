@@ -56,7 +56,7 @@ function AppContent() {
   }, [canUndo, undo, toggleTheme]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-200">
+    <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-black text-slate-900 dark:text-slate-100 transition-colors duration-200">
       <Navbar onOpenSearch={() => setIsSearchOpen(true)} />
       
       <div className="flex-1 flex w-full max-w-7xl mx-auto">

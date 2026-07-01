@@ -64,7 +64,7 @@ export default function CGPACalculator() {
   return (
     <div className="space-y-6 animate-in fade-in slide-in-from-bottom-3 duration-250">
       {/* Intro Banner */}
-      <div className="rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 shadow-sm">
+      <div className="rounded-2xl border border-slate-100 dark:border-slate-900 bg-white dark:bg-slate-950 p-6 shadow-sm">
         <h2 className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wider">
           Cumulative CGPA Optimizer
         </h2>
@@ -99,8 +99,8 @@ export default function CGPACalculator() {
                       : 'opacity-40 grayscale'
                   } ${
                     active
-                      ? 'bg-white dark:bg-slate-900 border-blue-500 dark:border-blue-500/80'
-                      : 'bg-slate-50/50 dark:bg-slate-950/20 border-slate-100 dark:border-slate-800/60'
+                      ? 'bg-white dark:bg-slate-950 border-blue-500 dark:border-blue-500/80'
+                      : 'bg-slate-50/50 dark:bg-black/20 border-slate-100 dark:border-slate-900/60'
                   }`}
                 >
                   <div className="flex items-start justify-between">
@@ -130,7 +130,7 @@ export default function CGPACalculator() {
                     )}
                   </div>
 
-                  <div className="mt-4 flex items-center justify-between border-t border-slate-50 dark:border-slate-800/40 pt-3">
+                  <div className="mt-4 flex items-center justify-between border-t border-slate-50 dark:border-slate-900/40 pt-3">
                     <span className="text-[10px] font-black uppercase tracking-wider text-slate-400">
                       Semester GPA
                     </span>
@@ -192,7 +192,7 @@ export default function CGPACalculator() {
           </div>
 
           {/* Mathematical breakdown card */}
-          <div className="rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 shadow-sm">
+          <div className="rounded-2xl border border-slate-100 dark:border-slate-900 bg-white dark:bg-slate-950 p-5 shadow-sm">
             <div className="flex items-center gap-1.5 mb-3">
               <HelpCircle className="h-4 w-4 text-blue-600 dark:text-blue-400" />
               <h4 className="text-xs font-black uppercase tracking-wider text-slate-400 dark:text-slate-500">
@@ -204,20 +204,20 @@ export default function CGPACalculator() {
               CGPA is calculated by dividing total quality points (Grade Points × Course Credits) by the total number of credit hours attempted.
             </p>
 
-            <div className="space-y-2.5 rounded-xl bg-slate-50 dark:bg-slate-950/40 p-3.5 border border-slate-100 dark:border-slate-850 font-mono text-[10px] text-slate-600 dark:text-slate-400">
+            <div className="space-y-2.5 rounded-xl bg-slate-50 dark:bg-black/40 p-3.5 border border-slate-100 dark:border-slate-900 font-mono text-[10px] text-slate-600 dark:text-slate-400">
               <div>
                 <p className="font-bold text-slate-400 mb-0.5">Quality Points Sum:</p>
                 <p className="text-slate-900 dark:text-slate-200 font-medium">
                   ∑(GP × Cr) = <span className="font-bold text-blue-600 dark:text-blue-400">{totalGradePoints.toFixed(2)}</span>
                 </p>
               </div>
-              <div className="border-t border-slate-100 dark:border-slate-800 pt-2">
+              <div className="border-t border-slate-100 dark:border-slate-900 pt-2">
                 <p className="font-bold text-slate-400 mb-0.5">Attempted Credits:</p>
                 <p className="text-slate-900 dark:text-slate-200 font-medium">
                   ∑(Cr) = <span className="font-bold text-blue-600 dark:text-blue-400">{totalCredits}</span>
                 </p>
               </div>
-              <div className="border-t border-slate-100 dark:border-slate-800 pt-2">
+              <div className="border-t border-slate-100 dark:border-slate-900 pt-2">
                 <p className="font-bold text-slate-400 mb-0.5">Division Formula:</p>
                 <p className="text-slate-900 dark:text-slate-200 font-medium">
                   CGPA = {totalGradePoints.toFixed(2)} / {totalCredits} = <span className="font-bold text-blue-600 dark:text-blue-400">{cgpa.toFixed(2)}</span>

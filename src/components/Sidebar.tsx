@@ -27,7 +27,7 @@ export default function Sidebar() {
   return (
     <>
       {/* Desktop Sidebar (Left side rail) */}
-      <aside className="hidden w-64 shrink-0 border-r border-slate-200/80 dark:border-slate-800/80 bg-blue-950 dark:bg-slate-900 text-white flex md:flex-col justify-between p-4">
+      <aside className="hidden w-64 shrink-0 border-r border-slate-200/80 dark:border-slate-900/80 bg-blue-950 dark:bg-slate-950 text-white flex md:flex-col justify-between p-4">
         <div className="space-y-6">
           <div className="px-3 py-2 text-[10px] font-black tracking-widest text-blue-200/50 dark:text-slate-500 uppercase">
             Menu Navigation
@@ -56,7 +56,7 @@ export default function Sidebar() {
         </div>
 
         {/* Info label at bottom */}
-        <div className="rounded-xl bg-blue-900/40 dark:bg-slate-850/60 p-3 text-center border border-blue-800/30 dark:border-slate-800/40">
+        <div className="rounded-xl bg-blue-900/40 dark:bg-slate-850/60 p-3 text-center border border-blue-800/30 dark:border-slate-900/40">
           <div className="text-[10px] font-black tracking-wider uppercase text-blue-300 dark:text-blue-400 mb-0.5">
             Debre Berhan University
           </div>
@@ -67,7 +67,7 @@ export default function Sidebar() {
       </aside>
 
       {/* Mobile Navigation (Bottom bar) */}
-      <nav className="fixed bottom-0 left-0 z-40 flex h-16 w-full items-center justify-around border-t border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md px-2 md:hidden">
+      <nav className="fixed bottom-0 left-0 z-40 flex h-16 w-full items-center justify-around border-t border-slate-200 dark:border-slate-900 bg-white/95 dark:bg-slate-950/95 backdrop-blur-md px-2 md:hidden">
         {navItems.slice(0, 6).map((item) => {
           const Icon = item.icon;
           return (
